@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sujit_Suman_Protofolio</title>
+		 <meta name="author" content="Jake Rocheleau">
+         <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+         <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		 <script type="text/javascript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
+         <script type="text/javascript" charset="utf-8" src="js/jquery.lightbox-0.5.min.js"></script>
+		 <script type='text/javascript' src="js/date_time.js"></script>
+		<script type="text/javascript">
+         $(function(){
+         $('a[rel=lightbox]').lightBox({
+         containerResizeSpeed: 250,
+         fixedNavigation: true
+         });
+         $('a[rel=2ndlightbox]').lightBox({
+         overlayBgColor: '#fff',
+         overlayOpacity: 0.7
+          });
+         });
+        </script>
+		
+	    <script>
+		function validateForm()
+		{
+		var x=document.forms["myForm"]["name"].value;
+		if (x==null || x=="")
+		  {
+		  alert("Name should not be blanked.");
+		  return false;
+		  }
+		  
+		var x=document.forms["myForm"]["email"].value;
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+		  {
+		  alert("Not a valid e-mail address");
+		  return false;
+		  }
+		  
+		  var x=document.forms["myForm"]["subject"].value;
+		  if(x==null || x=="")
+		  {
+		  alert("Subject should not be blanked.");
+		  return false;
+		  }
+		  
+		  var x=document.getElementById("myTextarea").value;
+		  if(x==null || x=="")
+		  {
+		  alert("Message should not be blanked.");
+		  return false;
+		  }
+		}
+		</script>
+		
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Home</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#Project">Project</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#gallery">Achievement</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+					<li class="right"><span id="date_time"></span><script type="text/javascript">window.onload = date_time('date_time');</script></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="me image image-full"><img src="images/me.png" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h2>Hi. I'm <strong>Sujit Suman</strong>.</h2>
+							</header>
+							<p>And this is my <strong>portfolio</strong> Website, Currently I am working as a Software Engineer at <a href="http://www.rapidvaluesolutions.com/">RapidValue Software Solutions pvt ltd,</a> Bangalore. </p><!--For the help of this site you can know about my professional curriculum.
+						-->	<a href="#portfolio" class="button button-big">Learn about what I do</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Portfolio Work -->
+			<div class="wrapper wrapper-style2">
+				<article id="portfolio">
+					<header>
+						<h2>CURRICULUM VITAE.</h2>
+						<span>Education, Experience & Skills</span>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box box-style1" style="min-height: 626px;">
+									<span class="icon featured-icon icon-file-alt"></span>
+									<h3>My Education</h3>
+									<p class="curriculumViteText">●MCA from Bangalore University [70%] 2012.</p>
+									<p class="curriculumViteText">●BSc(CA) from T.M.B.U [62%] 2008.</p>
+									<p class="curriculumViteText">●HSC from B.I.S.E [54.40%] 2005.</p>
+									<p class="curriculumViteText">●SSC from B.S.E.B [70%] 2003.</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style1" style="min-height: 626px;">
+									<span class="icon featured-icon icon-comments-alt"></span>
+									<h3>Working Experience</h3>
+								    <p class="curriculumViteText">●Worked as a Project Intern in Isource worldwide,Bangalore From Feb 2012 to July 2012.</p>
+									<p class="curriculumViteText">● Currently Working as a Software Engineer at RapidValue Software Solutions pvt ltd, Bangalore From May 2014 to Present.</p>
+									<p></p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box box-style1">
+									<span class="icon featured-icon icon-thumbs-up"></span>
+									<h3>Software Skills</h3>
+									<p style="margin-bottom: 1em !important;" class="curriculumViteText">●Front-End Technologies- ANGULARJS,IONIC,JAVSCRIPT,JQUERY,HTML5.</p>
+									<p style="margin-bottom: 1em !important;" class="curriculumViteText">●Back-End Technologies- NODEJS,RESTIFY,EXPRESSJS,JAVA</p>
+									<p style="margin-bottom: 1em !important;" class="curriculumViteText">●DataBase Technologies- MYSQL, MONGODB</p>
+									<p style="margin-bottom: 1em !important;" class="curriculumViteText">●Design Pattern- MVC, MVP</p>
+									<p style="margin-bottom: 1em !important;" class="curriculumViteText">●Control Tools- BOWER, NPM, GULP</p>
+									<p></p>
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p></p>
+						<a href="#resume" class="button button-big">See My Resume</a>
+					</footer>
+				</article>
+			</div>
+			
+		<!-- Resume -->
+			<div class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="resume">
+					<header>
+						<h2>My Resume.</h2>
+						<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>
+						<a href="images/SujitSuman_2.3_YearsExp_Full_Stack_Devlopment.docx"><img src="images/word_dnld.png" alt="word_download" /></a>
+						<a href="images/SujitSuman_2.3_YearsExp_Full_Stack_Devlopment.pdf" download><img src="images/pdf_dnld.png" alt="pdf_download" /></a>
+					</header>
+					<footer>
+						<p></p>
+						<a href="#Project" class="button button-big">See some of my recent work</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Project -->	
+			<div class="wrapper wrapper-style3">
+				<article id="Project">
+					<header>
+						<h2>Awesome work makes happy clients.</h2>
+						<span>Industrial Exposure.</span>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://52.32.199.154/#/" class="image image-full" target="_blank"><img src="images/Quantinsti.PNG" alt="" /></a>
+									<h4>Name:- <a href="http://52.32.199.154/#/" target="_blank">Quantinsti</a></h4>
+									<h4 class="technologyText">Technology:- NodeJS,Restify,MYSQL,AWS,AgularJS,HTML5</h4>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="https://www.carnegielearning.com/" class="image image-full" target="_blank"><img src="images/CarnegieLearning.png" alt="" /></a>
+									<h4>Name:- <a href="https://www.carnegielearning.com/" target="_blank">Carnegie Learning</a></h4>
+									<h4 class="technologyText">Technology:- AgularJS,HTML5,CSS3,Git,JQuery, Eclipse</h4>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="#" class="image image-full"><img src="images/LocationTracking.png" alt="" /></a>
+									<h4>Name:- <a href="#">Location Tracking Solutions</a></h4>
+									<h4 class="technologyText">Technology:- NodeJS,ExpressJS,MongoDB,AgularJS</h4>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://52.200.211.78/#/" class="image image-full" target="_blank"><img src="images/UorikiFresh-Web.PNG" alt="" /></a>
+									<h4>Name:- <a href="http://52.200.211.78/#/" target="_blank">Uoriki Fresh Web</a></h4>
+									<h4 class="technologyText">Technology:- NodeJS,Restify,MYSQL,AWS,AgularJS,HTML5</h4>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="#" class="image image-full"><img src="images/UorikiFresh-Mobile.png" alt="" /></a>
+									<h4>Name:- <a href="#">Uoriki Fresh Mobile App</a></h4>
+									<h4 class="technologyText">Technology:- NodeJS,Restify,MYSQL,AWS,Ionic,HTML5</h4>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="#" class="image image-full"><img src="images/MigApp.png" alt="" /></a>
+									<h4>Name:- <a href="#">Mig Mobile App</a></h4>
+									<h4 class="technologyText">Technology:- NodeJS,Restify,MYSQL,AWS,Ionic,HTML5</h4>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.delighterr.com/" class="image image-full" target="_blank"><img src="images/Delighterr.PNG" alt="" /></a>
+									<h4>Name:- <a href="http://www.delighterr.com/" target="_blank">Delighterr</a></h4>
+									<h4 class="technologyText">Technology:- AgularJS,JQuery,HTML5,CSS3</h4>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://www.devonenergy.com/" class="image image-full" target="_blank"><img src="images/DevonProductionPortal.PNG" alt="" /></a>
+									<h4>Name:- <a href="http://www.devonenergy.com/" target="_blank">Devon Production Portal</a></h4>
+									<h4 class="technologyText">Technology:- ExtJS,JQuery,HTML5,CSS3</h4>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box box-style2">
+									<a href="http://marketvoicemag.org/" class="image image-full" target="_blank"><img src="images/MarketVoice.PNG" alt="" /></a>
+									<h4>Name:- <a href="http://marketvoicemag.org/" target="_blank">MarketVoice Magazine</a></h4>
+									<h4 class="technologyText">Technology:- Drupal,JQuery,HTML5,CSS3</h4>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p></p>
+						<a href="#about" class="button button-big">About Me</a>
+					</footer>
+				</article>
+			</div>
+			
+			<!-- About Me -->
+			
+			<div class="wrapper wrapper-style1 wrapper-first">
+				<article class="container" id="about">
+					<div>
+					    <header>
+							<h2><strong>Sujit Suman</strong></h2>
+						</header>
+					    <p style="color:black;text-align:initial;">I am Quick Learner and have Advanced problem solving skills. Presently working as Software Engineer at RapidValue Solutions Pvt Ltd, Bangalore from 05/2014 (2 years and 3 month), responsible for developing web based applications and mobile based applications. Expertise in Full stack (MEAN) development. Strong hold in Java Script frameworks like AngularJS, NodeJS, ReactJS, ExtJS. Expertise in Web Technologies like HTML5, JQuery, CSS3, Ajax. Hands on experience in building mobile application (cross platform) using Ionic framework. Well versed with RDBMS – MySQL and NoSQL DB – MongoDB. Good Debugging skills in Web-browser.</p>
+						<p style="color:black;text-align:initial;">I did my Bachelor Degree, B.Sc. in Computer Application from Tilka Manjhi Bhagalpur University, Bhagalpur(Bihar). And I did my Masters Degree in Computer Application (MCA) from Bangalore University, Bangalore. My hobbies are Playing computer games and outdoor games like basket ball, listening music, watch movie & Reading about new technology..</p>
+					</div>
+				</article>
+				<a href="#gallery" class="button button-big">Achievement</a>
+			</div>
+			
+					<!-- Gallery -->
+			<div class="wrapper wrapper-style3">
+				<article id="gallery">
+					<header>
+						<h2>My Achievement.</h2>
+					</header>
+                   <!-- Start-->
+				   
+				   <div class="photos">
+                    <ul>
+						<li><a href="images/Certificate.pdf" download><img src="images/pdf_dnld.png" alt="pdf_download" /></a></li>
+						<li><a href="https://s3.amazonaws.com/edu-cert.10gen.com/downloads/97718d61a2b0476cbaf0c7d6dd27a10a/Certificate.pdf?_ga=1.223289435.1382487781.1413467278" target='_blank'>LINK</a></li>
+						<li><a href="images/photos/certificate.png" rel="lightbox" title="Designed by <a href='sujitsuman.com' target='_blank'>Sujit Suman</a>"><img src="images/photos/certificate-thumb.png" width="150" height="150"></a></li>
+						
+					</ul>
+                   </div>
+				   
+				   <!-- END-->
+					<div><footer>
+						<p></p>
+						<a href="#contact" class="button button-big">Get in touch with me</a>
+					</footer></div>
+				</article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper wrapper-style4">
+				<article id="contact" class="container small">
+					<header>
+						<h2>Want to hire me? Get in touch!</h2>
+						<span></span>
+					</header>
+					<div>
+						<div class="row">
+							<div class="12u">
+								<form name="myForm" onsubmit="return validateForm();" method="post" action="contact.php">
+									<div>
+										<div class="row half">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row half">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="submit" value="Send Message" class="button">
+												<input width="1000px" height="500px" type="button" value="Clear Form" class="button button-alt form-button-reset" />
+												<!--<a href="#" class="button button-alt form-button-reset">Clear Form</a>-->
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row row-special">
+							<div class="12u">
+								<h3>Find me on ...</h3>
+								<ul class="social">
+									<li class="twitter"><a href="https://twitter.com/sumansujit" class="icon icon-twitter" target="_blank"><span>Twitter</span></a></li>
+									<li class="facebook"><a href="https://www.facebook.com/sujit.suman.12" class="icon icon-facebook" target="_blank"><span>Facebook</span></a></li>
+									<li class="dribbble"><a href="http://dribbble.com/sujitsuman" class="icon icon-dribbble" target="_blank"><span>Dribbble</span></a></li>
+									<li class="linkedin"><a href="http://in.linkedin.com/in/sujitsuman/" class="icon icon-linkedin" target="_blank"><span>LinkedIn</span></a></li>
+									<li class="tumblr"><a href="http://about.me/sujitsuman" class="icon icon-tumblr" target="_blank"><span>aboutme</span></a></li>
+									<li class="googleplus"><a href="https://plus.google.com/u/0/106077222002430058655/about" class="icon icon-google-plus" target="_blank"><span>Google+</span></a></li>
+									<li class="github"><a href="https://github.com/sujitsuman" class="icon icon-github" target="_blank"><span>Github</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<p id="copyright">
+							&copy; 2016 Sujit Suman | Mob No: <a href="">+91 9164025931</a> | Email: <a target="_blank" href="mailto:info@sujitsuman.com">info@sujitsuman.com</a> |
+							<a target="_blank" href="mailto:sumansujit2009@gmail.com">sumansujit2009@gmail.com</a>
+							<!-- Start counter code -->
+							
+								<!-- <a href="" target="_blank" title="counter"><img align="right" border="0" alt="counter" src="http://mycounter.tinycounter.com/index.php?user=sujitsuman"></a> -->
+								<a href="http://www.freecounterstat.com" title="website counter"><img src="http://counter7.01counter.com/private/freecounterstat.php?c=c4231097f5f9e340ccdb25301db2797f" border="0" title="website counter" alt="website counter"></a>
+							<!-- End counter code -->
+						</p>
+					</footer>
+				</article>
+			</div>
+
+
+	</body>
+</html>
