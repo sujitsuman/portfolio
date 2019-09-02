@@ -7,7 +7,7 @@
  $subject = $_REQUEST['subject'] ;
  $message = $_REQUEST['message'] ;
  $headers = "From: $email";
- $sent = mail($to, $subject, $message, $headers) ; 
+ $sent = mail($to, $subject, $message, $headers) ;
  if($sent)
  {print "Your mail was sent successfully";
  $url = 'index.html';

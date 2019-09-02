@@ -3,6 +3,7 @@ DirectoryIndex index.html
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_METHOD} = POST
 RewriteCond $1 !^(index\.html|public|images|css|js|robots\.txt)
 
 RewriteRule ^(.*)$ index.html?/$1 [L]
